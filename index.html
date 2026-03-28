@@ -5,97 +5,13 @@
   <title>Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background: #f5f3ef;
-      color: #333;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 40px;
-      font-weight: bold;
-    }
-
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #333;
-    }
-
-    .hero {
-      padding: 60px 40px;
-      font-size: 32px;
-      font-weight: bold;
-    }
-
-    .works {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      padding: 40px;
-    }
-
-    .card {
-      position: relative;
-      border-radius: 20px;
-      overflow: hidden;
-      cursor: pointer;
-    }
-
-    .card img {
-      width: 100%;
-      height: 400px;
-      object-fit: cover;
-    }
-
-    .overlay {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      padding: 20px;
-      background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
-      color: white;
-    }
-
-    .tag {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: white;
-      padding: 8px 16px;
-      border-radius: 20px;
-      font-size: 12px;
-    }
-
-    .about {
-      padding: 60px 40px;
-      line-height: 1.8;
-    }
-
-    iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-      border-radius: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      font-size: 12px;
-      color: gray;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <div>PORTFOLIO</div>
+  <div class="logo">PORTFOLIO</div>
   <nav>
     <a href="#works">Works</a>
     <a href="#about">About</a>
@@ -109,9 +25,8 @@
 
 <section id="works" class="works">
 
-  <!-- カード① -->
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" />
+    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
     <div class="tag">Reels</div>
     <div class="overlay">
       <h2>TGCteen 運用</h2>
@@ -119,9 +34,8 @@
     </div>
   </div>
 
-  <!-- カード② -->
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" />
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
     <div class="tag">Instagram</div>
     <div class="overlay">
       <h2>Elegant Moments</h2>
@@ -135,18 +49,13 @@
   <h2>About</h2>
   <p>
     SNS運用を中心に、動画制作・デザインを行っています。<br>
-    特にInstagramのリールや投稿の世界観設計が得意です。<br><br>
-
-    TGCteenの運用では、再生数・エンゲージメント向上に貢献しました。
+    リールや投稿の世界観設計が得意です。
   </p>
 </section>
 
 <section class="about">
   <h2>Instagram</h2>
-
-  <!-- ここにインスタ埋め込み -->
   <iframe src="https://www.instagram.com/p/XXXXXXXX/embed"></iframe>
-
 </section>
 
 <section class="about" id="contact">
